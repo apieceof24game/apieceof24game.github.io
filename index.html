@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html  >
+<head>
+  <meta charset="UTF-8">
+  <title>断剑残忆万寿无疆-阳寿挖宝万夫莫当</title>
+  <link rel='stylesheet' href='splitting.css'>
+<link rel='stylesheet' href='splitting-cells.css'>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./jq/jquery-3.2.1.min.js"></script>
+    <script type='text/javascript' src='https://cdn1.liuchuo.net/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://cdn1.liuchuo.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="text" data-splitting="">欢迎来到艾欧泽亚阳寿银行</div>
+  <div class="presents">
+    <div class="present orange">
+      <div class="lid"></div>
+      <div class="box"></div>
+      <div class="bow"></div>
+      <div class="ribbon"></div>
+    </div>
+    <div class="present blue">
+      <div class="lid"></div>
+      <div class="box"></div>
+      <div class="bow"></div>
+      <div class="ribbon"></div>
+    </div>
+    <div class="present green">
+      <div class="lid"></div>
+      <div class="box"></div>
+      <div class="bow"></div>
+      <div class="ribbon"></div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='mo.min.js'></script>
+ 
+<script src='splitting.min.js'></script>
+    <script  src="./script.js"></script>
+    <script type="text/javascript"> 
+    var read=function(msg) {
+      let m = msg
+        var url = "http://tts.baidu.com/text2audio?cuid=baike&lan=ZH&ctp=1&pdt=301&vol=9&rate=32&per=0&tex=" + encodeURI(m);
+        var n = new Audio(url);		var msg = '欢迎来到艾欧泽亚阳寿银行, 今天是2021年5月27日, 是您的生日. 本银行送上50年阳寿. 祝您挖宝愉快, 次次出小牛皮, 把把出陆行鸟羽毛.';
+
+        n.src = url;
+        n.play();
+      
+    }
+
+    /* 鼠标特效 */
+    var a_idx = 0; 
+    jQuery(document).ready(function($) { 
+        $("body").click(function(e) { 
+            var a = new Array("送你50年阳寿啦", "下次吃拉拉肥火锅瘦肉都给你啦", "上什么班, 去饮茶啦", "甲方在你面前低头做狗啦", "产品经理一锤定音, 需求再也不改啦", "0 bug超人就是你啦", "打本roll点次次99啦", "祝你家人身体健康啦", "小琳沉迷主线, 无心摸鱼啦", "再也不说你断袖击剑啦", "排本遇不到毒奶啦", "你龙骑后跳必不被绊倒啦", "绝本一把过啦", "加薪升职就是你啦"); 
+            var $i = $("<span/>").text(a[a_idx]); 
+            a_idx = (a_idx + 1) % a.length; 
+            var x = e.pageX, 
+            y = e.pageY; 
+            $i.css({ 
+                "z-index": 999999999999999999999999999999999999999999999999999999999999999999999, 
+                "top": y - 20, 
+                "left": x, 
+                "position": "absolute", 
+                "font-weight": "bold", 
+                "color": "#ffffff" 
+            }); 
+            $("body").append($i); 
+            $i.animate({ 
+                "top": y - 50, 
+                "opacity": 0 
+            }, 
+            1500, 
+            function() { 
+                $i.remove(); 
+            }); 
+        }); 
+    }); 
+    read('欢迎来到艾欧泽亚阳寿银行, 今天是2021年5月27日, 是您的生日. 本银行送上100年阳寿. 祝您挖宝愉快, 次次出小牛皮, 把把出陆行鸟之笔. 嘤嘤嘤, 拂晓组亏得要去收破烂.')
+    </script>
+
+</body>
+</html>
